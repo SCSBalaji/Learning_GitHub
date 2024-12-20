@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #f17272, #f8ff7c, #ff6565);
+    background-size: cover; /* Ensure the background image covers the entire page */
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #ffd3d3;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6565;
+}
+
+/* Main section styling */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the section takes the full height of the viewport */
+    text-align: center;
+    padding: 20px;
+}
+
+.main-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6f61; /* Attractive coral color */
+}
+
+.main-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333; /* Darker color for better readability */
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #ff6f61; /* Coral color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e04e4e; /* Darker coral color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links a {
+        margin: 5px 0;
+    }
+
+    .main-section h1 {
+        font-size: 36px;
+    }
+
+    .main-section p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-section h1 {
+        font-size: 28px;
+    }
+
+    .main-section p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+}
